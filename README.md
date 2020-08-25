@@ -10,8 +10,10 @@ song = AudioSegment.from_file("example.wav",format = "wav")
 file_handle = song.export(filepath,audio_type)
 ## 使用pydub库实现音频切片
 切割单位为毫秒
-first_time = 3000  首部切割时间为3秒
-last_time = 3000   尾部切割时间为3秒
+first_time = 3000       首部切割时间为3秒
+
+last_time = 3000        尾部切割时间为3秒
+
 song[:first_time]
 song[-last_time:]
 ## 使用pydub库实现语音转码
