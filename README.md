@@ -9,7 +9,7 @@ song = AudioSegment.from_file("example.wav",format = "wav")
 通过export()函数输出文件的句柄。
 file_handle = song.export(filepath,audio_type)
 ## 使用pydub库实现音频切片
-切割单位为毫秒
+切割单位为毫秒           
 first_time = 3000       首部切割时间为3秒
 
 last_time = 3000        尾部切割时间为3秒
